@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Inter:wght@300..600&amp;family=Geist+Mono:wght@400;700&amp;display=swap"
+      rel="stylesheet" />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet" />
+   <title>Services</title>
+</head>
+  <style>
+           .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(217, 119, 7, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(217, 119, 7, 0.4);
+            box-shadow: 0 20px 40px -10px rgba(217, 119, 7, 0.15);
+            background: rgba(255, 255, 255, 0.8);
+        }
+  </style>
+<body>
+   <!-- Top Navigation Bar -->
+   <header class="">
+      <nav class="px-4 md:px-10 shadow-sm">
+         <input type="checkbox" id="menu-toggle" class="hidden">
+         <div id="nav-bar" class="py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+               <img src="assets/logo.png" alt="logo" class="w-8 md:w-10">
+               <h1 class="font-bold text-2xl md:text-4xl">Aero<span class="text-amber-600">Sphere</span></h1>
+            </div>
+            <ul class="hidden md:flex items-center gap-9 font-medium">
+               <li><a href="#" class="hover:text-amber-600">Home</a></li>
+              
+               <li><a href="about.html" class="hover:text-amber-600">About</a></li>
+                <li><a href="Services.html" class="hover:text-amber-600">Services</a></li>
+               <li><a href="contactus.html" class="hover:text-amber-600">Contact Us</a></li>
+            </ul>
+            <button id="register-btn"
+               class="hidden md:block bg-amber-600 text-white font-medium text-xl px-9 py-2 rounded-2xl hover:scale-110 transition">Register</button>
+            <label for="menu-toggle" class="md:hidden text-3xl cursor-pointer select-none">
+               <span class="open-icon">☰</span>
+               <span class="close-icon">✕</span>
+            </label>
+         </div>
+         <div id="mobile-menu" class="hidden md:!hidden border-t border-gray-100 py-4">
+            <ul class="flex flex-col font-medium mb-4">
+               <li><a href="#" class="block py-3 border-b border-gray-100 hover:text-amber-600">Home</a></li>
+               <li><a href="Services.html" class="block py-3 border-b border-gray-100 hover:text-amber-600">Services</a>
+               </li>
+               <li><a href="about.html" class="block py-3 border-b border-gray-100 hover:text-amber-600">About</a></li>
+               <li><a href="contactus.html" class="block py-3 hover:text-amber-600">Contact Us</a></li>
+            </ul>
+            <div class="flex justify-center">
+               <button id="register-btn-mobile"
+                  class="bg-amber-600 text-white font-medium text-lg py-3 px-9 rounded-2xl hover:scale-105 transition">Register</button>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- Hero / Services Section -->
+   <main class=" text-slate-900 pt-10 pb-40 overflow-hidden relative">
+      <div class="mx-auto max-w-7xl px-10">
+         <!-- Header Group -->
+         <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+            <!--left side-->
+            <div class="flex-1 text-center md:text-left">
+               <span
+                  class="inline-block bg-amber-600/10 px-3 py-2  rounded-full border border-amber-600/20 text-amber-600 uppercase mb-6 text-xs font-semibold tracking-widest">Our
+                  Services</span>
+
+               <h1 class="text-4xl sm:text-5xl  max-w-2xl lg:text-6xl font-extrabold leading-[1.1] mb-8 text-slate-900">
+                  Digital Solutions That Launch Your Business <span class="text-amber-600">Beyond Limits</span> </h1>
+
+               <p class="text-lg max-w-2xl  mx-auto text-slate-600 font-normal md:mx-0"> AeroSphere navigates the vast
+                  complexities of the digital frontier. We engineer growth through
+                  cosmic-grade strategies in online presence and high-velocity customer acquisition.</p>
+            </div>
+            <!-- Floating Rocket Visual -->
+            <div class="flex-1 flex justify-center items-center relative py-12">
+               <div class="absolute w-[400px] h-[400px] bg-amber-600/10 rounded-full blur-[120px] -z-10"></div>
+               <img src="assets/Futuristic sleek rocket.png"
+                  class="w-full max-w-md animate-float drop-shadow-[0_20px_50px_rgba(217,119,7,0.2)]" />
+            </div>
+         </div>
+
+         <!-- Services Grid -->
+         <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8">
+            <!-- Card 1: SEO -->
+            <div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">search</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">SEO</h3>
+                    <p class="text-xs mb-8 font-semibold">Optimizing your digital orbit to ensure your
+                        brand remains at the center of the search galaxy.</p>
+            </div>
+            <!-- Card 2: Social Media -->
+ <div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">share</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Social Media</h3>
+                    <p class="text-xs mb-8 font-semibold">Broadcasting your brand's frequency across
+                        every social constellation for maximum impact.</p>
+            </div>
+            <!-- Card 3: PPC -->
+ <div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">payments</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">PPC</h3>
+                    <p class="text-xs mb-8 font-semibold">Precision-targeted ad campaigns designed for
+                        hyper-speed ROI and business scaling.</p>
+            </div>
+            <!-- Card 4: Content Marketing -->
+ <div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">edit_note</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Content</h3>
+                    <p class="text-xs mb-8 font-semibold">Crafting compelling narratives that capture
+                        attention across the digital vacuum.</p>
+            </div>
+            <!-- Card 5: Email Marketing -->
+<div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">alternate_email</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Email</h3>
+                    <p class="text-xs mb-8 font-semibold">Direct transmission channels to your audience,
+                        building loyalty at the speed of light.</p>
+            </div>
+            <!-- Card 6: Web Dev -->
+<div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">language</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Web Dev</h3>
+                    <p class="text-xs mb-8 font-semibold">Engineering high-performance digital stations
+                        that serve as your brand's flagship.</p>
+            </div>
+            <!-- Card 7: Brand Strategy -->
+<div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">architecture</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Strategy</h3>
+                    <p class="text-xs mb-8 font-semibold">he blueprints for cosmic dominance, aligning
+                        your identity with your mission goals.</p>
+            </div>
+            <!-- Card 8: Analytics -->
+<div class=" p-10 glass-card rounded-3xl hover:-translate-y-3">
+                   <div
+                        class="w-14 h-14 rounded-full bg-amber-600 flex items-center justify-center mb-6 shadow-lg shadow-amber-600/30">
+                        <span class="material-symbols-outlined text-white" data-icon="search">query_stats</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-slate-900">Analytics</h3>
+                    <p class="text-xs mb-8 font-semibold">Deep-space data monitoring to optimize
+                        trajectories and ensure mission success.</p>
+            </div>             
+         </div>
+      </div>
+   </main>
+    <footer>
+      <div class="w-[90%] max-w-[900px] h-[2px] bg-amber-600 mt-3 mx-auto mb-6"></div>
+      <div class="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 pb-6">
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="text-center sm:text-left">
+               <h2 class="text-2xl sm:text-3xl font-bold">Aero<span class="text-amber-600">Sphere</span></h2>
+               <p class="text-gray-600 text-sm sm:text-base mt-2">Where growth begins...</p>
+               <div class="mt-8">
+                  <h3 class="text-lg font-semibold">Address :</h3>
+                  <p class="text-gray-600 text-sm mt-2 leading-relaxed">4662 Benson Park,<br>Toronto, Canada</p>
+               </div>
+               <div class="mt-8">
+                  <h3 class="text-lg font-semibold">Contact Details :</h3>
+                  <p class="text-sm text-gray-600">43463649342387</p>
+                  <p class="text-sm text-gray-600">43463649342387</p>
+                  <p class="text-sm text-gray-600">AeroSpace@gmail.com</p>
+               </div>
+            </div>
+            <div class="mt-9 text-center sm:text-left">
+               <h3 class="text-xl sm:text-2xl text-amber-600 mb-6">Services :</h3>
+               <ul class="space-y-4 text-sm sm:text-base text-gray-800">
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">SEO</a>
+                  </li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Content
+                        Marketing</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Email
+                        Marketing</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Brand
+                        Development</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Influencer
+                        Marketing</a></li>
+               </ul>
+            </div>
+            <div class="mt-9 text-center sm:text-left">
+               <h3 class="text-xl sm:text-2xl text-amber-600 mb-6">Products :</h3>
+               <ul class="space-y-4 text-sm sm:text-base text-gray-700">
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-all duration-300">SEO
+                        Optimizer</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-all duration-300">Content Reach
+                        Check</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-all duration-300">Email/Ads
+                        Marketing</a></li>
+                  <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-all duration-300">Brand Identity
+                        Builder</a></li>
+               </ul>
+            </div>
+            <div class="mt-9 flex flex-col justify-between text-center sm:text-left">
+               <div>
+                  <h3 class="text-2xl text-amber-600 mb-8">Legal:</h3>
+                  <ul class="space-y-6 text-gray-700">
+                     <li><a href="#"
+                           class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Contact</a></li>
+                     <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Privacy
+                           Policy</a></li>
+                     <li><a href="#" class="cursor-pointer hover:text-amber-600 transition-colors duration-300">Terms &
+                           Conditions</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="flex justify-center lg:justify-end">
+            <img src="assets/Footerlogos.png" alt="logo" class="w-40 sm:w-45 md:w-50">
+         </div>
+      </div>
+      <div class="bg-amber-600 py-4">
+         <div class="max-w-7xl mx-auto px-4">
+            <p class="text-white text-xs sm:text-sm text-center">© 2026, AeroSphere.inc</p>
+         </div>
+      </div>
+   </footer>
+
+    <script>
+    <!--NavLinks-->
+      const links = document.querySelectorAll(".nav-link");
+
+      links.forEach(link => {
+         if (link.href === window.location.href) {
+            link.classList.add("text-amber-600");
+         }
+      });
+
+      const modal = document.getElementById("register-modal");
+
+      document.getElementById("register-btn")
+         .addEventListener("click", () => {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+         });
+
+      document.getElementById("register-btn-mobile")
+         .addEventListener("click", () => {
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+         });
+
+
+      document.getElementById("close-modal")
+         .addEventListener("click", () => {
+            modal.classList.remove("flex");
+            modal.classList.add("hidden");
+         });
+
+
+      // Close when clicking outside form
+      modal.addEventListener("click", (e) => {
+         if (e.target === modal) {
+            modal.classList.remove("flex");
+            modal.classList.add("hidden");
+         }
+      });
+
+
+ </script>
+</body>
+
+</html>
